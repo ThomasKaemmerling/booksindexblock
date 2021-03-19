@@ -52,9 +52,7 @@ class BooksIndexBlock extends BlockBase implements ContainerFactoryPluginInterfa
    * {@inheritdoc}
    */
   public function build() {
-    $toc=[];
     $content=$this->buildBlockContent($this->bookManager->bookTreeAllData(1),[],0, 1000);
-    var_dump( $toc );
     return [
       '#markup' =>  $content,
     ];
