@@ -1,0 +1,10 @@
+name: Books Index Blog
+description: Creates a Blog that shows the full index of a book.
+package: Booksextension
+type: module
+version: 1.0
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:book
